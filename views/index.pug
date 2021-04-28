@@ -1,0 +1,199 @@
+doctype html
+| &ZeroWidthSpace;
+| &ZeroWidthSpace;
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title House-Remodelation
+  link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+  script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')
+  link(rel='stylesheet', href='style.css')
+  | &ZeroWidthSpace;
+  style.
+    ​
+    /* .images-1{
+    border: none;
+    animation-name: carousel;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    ​
+    ​
+    } */
+    ​
+    .logo{
+    border: 1px solid black;
+    border-style: groove;
+    transform: rotate(-15deg);
+    margin-left: 50px;
+    margin-top: 40px;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position: relative;
+    animation-delay: 3s;
+    }
+    @keyframes logo {
+    0%{transform: translateY(-350px)}
+    /* 50%{transform: translateY(-350px)} */
+    100%{transform: translate(30px) rotate(-10deg)}
+    }
+    ​
+    ​
+    ​
+    ​
+    .container{
+    margin-top: 50px;
+    }
+    footer{
+    text-align: center;
+    position: static;
+    left:0;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    height: 150px;
+    /* margin-top: 50px; */
+    /* margin-left: 650px; */
+    ​
+    }
+    ​
+    ​
+    .navm{
+    background-image: url('https://diy.sndimg.com/content/dam/images/diy/fullset/2014/12/8/0/TS-96326751_mold-cinderblock-basement-wall_h.jpg.rend.hgtvcom.966.725.suffix/1420691099014.jpeg');
+    height: 150px;
+    }
+    .first  {
+    text-decoration:none;
+    font-size: 20px;
+    margin: 35px;
+    color: white;
+    border-radius: 20px;
+    background:red;
+    padding: 20px;
+    width: 323px;
+    height: 30px;
+    padding-bottom: 30px;
+    padding-top: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+    }
+    nav a:hover{
+    color: white;
+    text-decoration: none;
+    }
+    .second  {
+    text-decoration:none;
+    font-size: 20px;
+    margin: 35px;
+    color: white;
+    border-radius: 20px;
+    background: green;
+    padding: 20px;
+    width: 323px;
+    height: 30px;
+    padding-bottom: 30px;
+    padding-top: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+    margin-left: 100px;
+    }
+    ​
+    ​
+    .third {
+    text-decoration:none;
+    font-size: 20px;
+    margin: 35px;
+    color: white;
+    border-radius: 20px;
+    background: brown;
+    padding: 20px;
+    width: 323px;
+    height: 30px;
+    padding-bottom: 30px;
+    padding-top: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+    margin-left: 280px;
+    }
+    ​
+    @keyframes carousel{
+    0%{    border: dashed purple 15px;
+    }
+    25%{    border: double  darkgreen 18px;
+    }
+    50%{    border: solid darkblue 21px;
+    }
+    75%{    border: ridge darkred 25px;
+    }
+    100%{    border: outset darkgoldenrod 27px;
+    }
+    ​
+    }
+    ​
+  | &ZeroWidthSpace;
+  | &ZeroWidthSpace;
+| &ZeroWidthSpace;
+| &ZeroWidthSpace;
+.navm
+  | &ZeroWidthSpace;
+  | &ZeroWidthSpace;
+  //- a.third(href='/Contract')  CONTRACTS
+  a.first(href='/home') Home    
+  a.second(href='/contact') REQUEST A SERVICE &gt;&gt;
+
+  | &ZeroWidthSpace;
+  | &ZeroWidthSpace;
+| &ZeroWidthSpace;
+| &ZeroWidthSpace;
+| &ZeroWidthSpace;
+.container
+  | &ZeroWidthSpace;
+  #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+      li(data-target='#carouselExampleIndicators', data-slide-to='1')
+      li(data-target='#carouselExampleIndicators', data-slide-to='2')
+    .carousel-inner.images-1
+      .carousel-item.active
+        img.d-block.w-100(src='https://i.pinimg.com/originals/42/93/b7/4293b790f537882b262c03fce629bceb.jpg', height='500px', width='300px', alt='...')
+      .carousel-item
+        img.d-block.w-100(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFxxHVDTf_FJ-HSX19xWvw8eypJ01uPLCwLy6ctpOC6F0qAKP6YCnzuykjLNa2mq6VPx4&usqp=CAU', height='500px', width='300px', alt='...')
+      .carousel-item
+        img.d-block.w-100(src='https://lirp.cdn-website.com/7b81689192504bb8a0b572113919a515/dms3rep/multi/opt/41430099_2134558556765193_7098788347023196160_o-640w.jpg', height='500px', width='300px', alt='...')
+    a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next
+  | &ZeroWidthSpace;
+  hr
+  | &ZeroWidthSpace;
+  .row(style='margin-bottom: 50px;')
+    .col-12
+      | &ZeroWidthSpace;
+      h2 History
+      p
+        | Since 1996 this company was one of my biggest goals that Phillip Wood have made. Phillip Wood is a
+        | bussiness man since 1996, which this bussiness have gave him the respect that he deserves. He and
+        | his company has painted 1000 homes over the year which is impressive and people recognized his
+        | hard-work. No one of the customers has complain about his job and what he has made. Lorem ipsum
+        | dolor sit amet consectetur adipisicing elit. Omnis, animi vel quisquam voluptate debitis consequatur
+        | deleniti nihil unde, labore autem possimus expedita incidunt, vero nobis. Molestias tenetur a
+        | numquam optio.
+  | &ZeroWidthSpace;
+br
+| &ZeroWidthSpace;
+footer
+  h3
+    | Official WCX Panting Company | Established by Phillip Wood in 1996
+    | &ZeroWidthSpace;
+| &ZeroWidthSpace;
+| &ZeroWidthSpace;
+| &ZeroWidthSpace;

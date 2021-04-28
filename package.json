@@ -1,0 +1,25 @@
+{
+  "name": "nesm",
+  "version": "1.0.0",
+  "description": "Create a full stack application where a very simple front end connects to one route on an Express back end which retrieves and returns data to the front end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "sequelize"
+  ],
+  "author": "Destynee, Abraham",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "expres": "^0.0.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "pug": "^3.0.2",
+    "sequelize": "^6.6.2"
+  }
+}
