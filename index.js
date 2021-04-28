@@ -11,12 +11,12 @@ app.listen(PORT,()=> console.log(`app listening on port: ${PORT}`));
 
 
 //database setup
-const Sequelize= require('sequelize');
-const sequelize = new Sequelize({
-    // host:'localhost',
-    dialect:'sqlite',
-    storage: './database.sqlite'
-});
+// const Sequelize= require('sequelize');
+// const sequelize = new Sequelize({
+//     // host:'localhost',
+//     dialect:'sqlite',
+//     storage: './database.sqlite'
+// });
 
 
 //authenticate database

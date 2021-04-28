@@ -34,15 +34,28 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
+const dbConfig = require("./con/db.config.js");
 
 const Sequelize= require('sequelize');
-const sequelize = new Sequelize({
-    // host:'localhost',
+// const sequelize = new Sequelize({
+//     host:'localhost',
 
 //this is from sequelize example. change as needed. 
 
     // dialect:'sqlite',
     // storage: './database.sqlite'
+// });
+const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
+  host: dbConfig.HOST,
+  dialect: dbConfig.dialect,
+  operatorsAliases: false,
+
+  pool: {
+    max: dbConfig.pool.max,
+    min: dbConfig.pool.min,
+    acquire: dbConfig.pool.acquire,
+    idle: dbConfig.pool.idle
+  }
 });
 
 
