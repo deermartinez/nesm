@@ -1,25 +1,16 @@
 doctype html
 head
   meta(charset='UTF-8')
-  meta(http-equiv='X-UA-Compatible', content='IE=edge')
-  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
   title Contracts
   | &ZeroWidthSpace;
   style.
     .navm{
     background-image: url('https://diy.sndimg.com/content/dam/images/diy/fullset/2014/12/8/0/TS-96326751_mold-cinderblock-basement-wall_h.jpg.rend.hgtvcom.966.725.suffix/1420691099014.jpeg');
     height: 150px;
-    
     }
     ​
-    ​
-    form {
-    margin: 0 auto;
-    width: 500px;
-    padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 100px;
-    }
     ​
     ul {
     list-style: none;
@@ -69,7 +60,7 @@ head
     font-size: 15px;
     width: 100%;
     height: 150px;
-    margin-top: 50px;
+    margin-bottom: 50px;
     /* margin-left: 650px; */
     ​
     }
@@ -120,6 +111,35 @@ head
     float: left;
     margin-left: 280px;
     }
+    .split {
+    height: 80%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 150px;
+    bottom:150px;
+    overflow-x: hidden;
+    padding-bottom: 100px;
+    text-align:center;
+    
+    }
+    /* Control the left side */
+    .left {
+    left: 0;
+    background-color: silver ;
+
+    }
+    /* Control the right side */
+    .right {
+    right: 0;
+    background-color: gray;
+    }
+    .centered img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    }
 | &ZeroWidthSpace;
 .navm
   | &ZeroWidthSpace;
@@ -127,34 +147,24 @@ head
   a.second(href='/contact')  Consultation 
   a.third(href='/services') REQUEST A SERVICE
   | &ZeroWidthSpace;
-  | &ZeroWidthSpace;
+  |   &ZeroWidthSpace;
 | &ZeroWidthSpace;
 br
-h1(style='text-align: center;') Please Complete the following contract form in order to get to your appoinment.
-br
-br
-| &ZeroWidthSpace;
-| &ZeroWidthSpace;
-form(action='handling-form-page', method='post')
-  ul
-    li
-      label(for='name') Name:
-      input#name(type='text', name='user_name')
-    li
-      label(for='Last name') Last Name:
-      input#Lname(type='text', name='user_lastname')
-    li
-      label(for='mail') E-mail:
-      input#mail(type='email', name='user_email')
-    li
-      label(for='password') Password:
-      input#password(type='password', name='user_password')
-    li
-      label(for='address') Address:
-      input#address(type='text', name='user_password')
-    li
-      label(for='msg') Remodalation:
-      textarea#msg(name='user_message')
+.split.left
+  .centered
+    h3 Wall Painting
+    img(src='https://betterdecoratingbible.com/wp-content/uploads/2020/01/house-wall-painting-decorating-ideas.png' alt='Wall paint')
+    br
+    p
+      | Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates a ut porro ipsa odio fugiat ab distinctio magnam? Ratione corrupti labore, dolore in porro voluptatem consequuntur? Earum veritatis aut at!
+    p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ea? Omnis id temporibus aliquam maiores repellendus animi delectus dolor, harum similique ipsa in eius, magnam sunt, repudiandae exercitationem perferendis? Nostrum?
+.split.right
+  .centered
+    h3 Wall construction
+    img(src='https://st.hzcdn.com/fimgs/633238d0079d655c_2900-w500-h375-b0-p0--.jpg')
+    br
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi odio, non sint quibusdam odit, blanditiis iste ipsam perferendis error eaque modi inventore? Voluptatibus similique cupiditate beatae numquam quos sequi inventore..
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aut sed ea ipsa, illum consequuntur culpa qui inventore corrupti labore adipisci ex, commodi suscipit libero. Aut soluta non dignissimos maxime.
 | &ZeroWidthSpace;
 | &ZeroWidthSpace;
 | &ZeroWidthSpace;
